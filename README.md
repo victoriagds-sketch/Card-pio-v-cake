@@ -379,7 +379,7 @@
     </div>
 
     <!-- BOTÃO DE WHATSAPP -->
-    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20V-CAKE" target="_blank" class="btn-whatsapp">
+    <a href="https://wa.me/5564992147719?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20V-CAKE" target="_blank" class="btn-whatsapp">
         💬 Faça seu pedido no WhatsApp
     </a>
 
