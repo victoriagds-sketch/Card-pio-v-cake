@@ -15,34 +15,44 @@
         body {
             background-color: #FFFDF9;
             color: #4A3B32;
-            padding-bottom: 80px;
+            padding-bottom: 90px;
         }
 
-        /* CABEÇALHO */
+        /* CABEÇALHO COM LOGO */
         header {
             background: linear-gradient(135deg, #FFF0F5 0%, #F5E6E8 100%);
             text-align: center;
-            padding: 40px 20px 30px;
+            padding: 30px 20px 25px;
             border-bottom: 2px solid #E8D8CE;
         }
 
+        .logo-img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #FFF;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+
         header h1 {
-            font-size: 2.8rem;
+            font-size: 2.4rem;
             color: #8B5E3C;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
         }
 
         header p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #B5838D;
-            margin-top: 5px;
+            margin-top: 3px;
             letter-spacing: 1px;
             font-weight: 500;
         }
 
         .insta-link {
             display: inline-block;
-            margin-top: 15px;
+            margin-top: 12px;
             color: #8B5E3C;
             text-decoration: none;
             font-weight: bold;
@@ -50,9 +60,10 @@
             padding: 6px 15px;
             border-radius: 20px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            font-size: 0.9rem;
         }
 
-        /* NAVEGAÇÃO / CATEGORIAS */
+        /* NAVEGAÇÃO */
         .categories-nav {
             display: flex;
             overflow-x: auto;
@@ -75,15 +86,9 @@
             background-color: #F7EDE2;
             font-size: 0.9rem;
             font-weight: 600;
-            transition: all 0.2s;
         }
 
-        .categories-nav a:hover {
-            background-color: #B5838D;
-            color: #FFF;
-        }
-
-        /* CONTEÚDO PRINCIPAL */
+        /* CONTEÚDO */
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -95,7 +100,7 @@
         }
 
         .category-title {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: #8B5E3C;
             background-color: #F7EDE2;
             padding: 10px 15px;
@@ -106,27 +111,27 @@
             letter-spacing: 1px;
         }
 
-        /* CARDS DOS PRODUTOS */
+        /* ITEMS COM SUPORTE A FOTOS */
         .menu-item {
             background: #FFF;
             border: 1px solid #E8D8CE;
-            border-radius: 10px;
-            padding: 15px;
+            border-radius: 12px;
+            padding: 12px 15px;
             margin-bottom: 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 12px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
         .item-info {
-            flex-grow: 1;
-            padding-right: 15px;
+            flex: 1;
         }
 
         .item-name {
             font-weight: bold;
-            font-size: 1.05rem;
+            font-size: 1rem;
             color: #5C4033;
         }
 
@@ -139,12 +144,22 @@
 
         .item-price {
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #B5838D;
             white-space: nowrap;
+            margin-top: 4px;
         }
 
-        /* GRIDS DOS KITS */
+        .item-img {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #E8D8CE;
+            flex-shrink: 0;
+        }
+
+        /* KITS */
         .kits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -154,7 +169,7 @@
         .kit-card {
             background-color: #FFF8F0;
             border: 1px solid #E8D8CE;
-            border-radius: 10px;
+            border-radius: 12px;
             padding: 15px;
         }
 
@@ -182,10 +197,6 @@
             padding-left: 20px;
             font-size: 0.9rem;
             color: #6B4E31;
-        }
-
-        .kit-ul li {
-            margin-bottom: 5px;
         }
 
         /* BOTÃO FLUTUANTE PEDIDO */
@@ -216,6 +227,8 @@
 <body>
 
     <header>
+        <!-- FOTO DA LOGO DA V-CAKE -->
+        <img src="logo.png" alt="V-CAKE Confeitaria" class="logo-img">
         <h1>V-CAKE</h1>
         <p>Confeitaria Artesanal</p>
         <a href="https://instagram.com/Vitoria_Cake24" target="_blank" class="insta-link">📸 @Vitoria_Cake24</a>
@@ -241,23 +254,27 @@
             <div class="menu-item">
                 <div class="item-info">
                     <div class="item-name">Bolo por quilo</div>
+                    <div class="item-price">R$ 75,00 / kg</div>
                 </div>
-                <div class="item-price">R$ 75,00 / kg</div>
+                <img src="bolo-kilo.jpg" alt="Bolo por quilo" class="item-img">
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <div class="item-name">Bento Cake de 5 cm (na hamburgueira)</div>
+                    <div class="item-name">Bento Cake de 5 cm</div>
+                    <div class="item-desc">Na hamburgueira</div>
+                    <div class="item-price">R$ 38,00</div>
                 </div>
-                <div class="item-price">R$ 38,00</div>
+                <img src="bento-5cm.jpg" alt="Bento Cake 5cm" class="item-img">
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
                     <div class="item-name">Bento Cake de 10 cm</div>
                     <div class="item-desc">Aproximadamente 800 g</div>
+                    <div class="item-price">R$ 55,00</div>
                 </div>
-                <div class="item-price">R$ 55,00</div>
+                <img src="bento-10cm.jpg" alt="Bento Cake 10cm" class="item-img">
             </div>
         </section>
 
@@ -265,12 +282,18 @@
         <section id="cupcakes" class="category-section">
             <div class="category-title">🧁 Cupcakes</div>
             <div class="menu-item">
-                <div class="item-info"><div class="item-name">6 unidades</div></div>
-                <div class="item-price">R$ 45,00</div>
+                <div class="item-info">
+                    <div class="item-name">6 unidades</div>
+                    <div class="item-price">R$ 45,00</div>
+                </div>
+                <img src="cupcake-6.jpg" alt="Cupcakes" class="item-img">
             </div>
             <div class="menu-item">
-                <div class="item-info"><div class="item-name">12 unidades</div></div>
-                <div class="item-price">R$ 90,00</div>
+                <div class="item-info">
+                    <div class="item-name">12 unidades</div>
+                    <div class="item-price">R$ 90,00</div>
+                </div>
+                <img src="cupcake-12.jpg" alt="Cupcakes" class="item-img">
             </div>
         </section>
 
@@ -278,16 +301,25 @@
         <section id="docinhos" class="category-section">
             <div class="category-title">🍬 Docinhos</div>
             <div class="menu-item">
-                <div class="item-info"><div class="item-name">25 unidades</div></div>
-                <div class="item-price">R$ 45,00</div>
+                <div class="item-info">
+                    <div class="item-name">25 unidades</div>
+                    <div class="item-price">R$ 45,00</div>
+                </div>
+                <img src="docinhos-25.jpg" alt="Docinhos" class="item-img">
             </div>
             <div class="menu-item">
-                <div class="item-info"><div class="item-name">50 unidades</div></div>
-                <div class="item-price">R$ 90,00</div>
+                <div class="item-info">
+                    <div class="item-name">50 unidades</div>
+                    <div class="item-price">R$ 90,00</div>
+                </div>
+                <img src="docinhos-50.jpg" alt="Docinhos" class="item-img">
             </div>
             <div class="menu-item">
-                <div class="item-info"><div class="item-name">100 unidades</div></div>
-                <div class="item-price">R$ 170,00</div>
+                <div class="item-info">
+                    <div class="item-name">100 unidades</div>
+                    <div class="item-price">R$ 170,00</div>
+                </div>
+                <img src="docinhos-100.jpg" alt="Docinhos" class="item-img">
             </div>
         </section>
 
@@ -333,9 +365,18 @@
         <!-- TORTAS -->
         <section id="tortas" class="category-section">
             <div class="category-title">🍰 Tortas — R$ 75,00</div>
-            <div class="menu-item"><div class="item-name">Torta de limão</div></div>
-            <div class="menu-item"><div class="item-name">Torta de abacaxi</div></div>
-            <div class="menu-item"><div class="item-name">Banoffee</div></div>
+            <div class="menu-item">
+                <div class="item-info"><div class="item-name">Torta de limão</div></div>
+                <img src="torta-limao.jpg" alt="Torta de Limão" class="item-img">
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><div class="item-name">Torta de abacaxi</div></div>
+                <img src="torta-abacaxi.jpg" alt="Torta de Abacaxi" class="item-img">
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><div class="item-name">Banoffee</div></div>
+                <img src="banoffee.jpg" alt="Banoffee" class="item-img">
+            </div>
         </section>
 
         <!-- SOBREMESAS NA TRAVESSA -->
@@ -343,36 +384,54 @@
             <div class="category-title">🍓 Sobremesas na Travessa</div>
             <div class="kit-card" style="margin-bottom: 12px;">
                 <div class="kit-header"><span class="kit-title">Travessa Pequena</span><span class="kit-price">R$ 70,00</span></div>
-                <div class="item-desc" style="color: #5C4033;">Sabores disponíveis: Bombom de morango, Bombom de uva, Mousse trufado.</div>
+                <div class="item-desc" style="color: #5C4033;">Sabores: Bombom de morango, Bombom de uva, Mousse trufado.</div>
             </div>
             <div class="kit-card">
                 <div class="kit-header"><span class="kit-title">Travessa Grande</span><span class="kit-price">R$ 130,00</span></div>
-                <div class="item-desc" style="color: #5C4033;">Sabores disponíveis: Bombom de morango, Bombom de uva, Mousse trufado.</div>
+                <div class="item-desc" style="color: #5C4033;">Sabores: Bombom de morango, Bombom de uva, Mousse trufado.</div>
             </div>
         </section>
 
         <!-- PUDINS -->
         <section id="pudins" class="category-section">
             <div class="category-title">🍮 Pudins — R$ 65,00</div>
-            <div class="menu-item"><div class="item-name">Pudim tradicional</div></div>
-            <div class="menu-item"><div class="item-name">Pudim de maracujá</div></div>
-            <div class="menu-item"><div class="item-name">Pudim com calda de ameixa</div></div>
+            <div class="menu-item">
+                <div class="item-info"><div class="item-name">Pudim tradicional</div></div>
+                <img src="pudim-tradicional.jpg" alt="Pudim Tradicional" class="item-img">
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><div class="item-name">Pudim de maracujá</div></div>
+                <img src="pudim-maracuja.jpg" alt="Pudim de Maracujá" class="item-img">
+            </div>
+            <div class="menu-item">
+                <div class="item-info"><div class="item-name">Pudim com calda de ameixa</div></div>
+                <img src="pudim-ameixa.jpg" alt="Pudim Ameixa" class="item-img">
+            </div>
         </section>
 
         <!-- INDIVIDUAIS -->
         <section id="individuais" class="category-section">
             <div class="category-title">🍫 Sobremesas Individuais</div>
             <div class="menu-item">
-                <div class="item-name">Bolo no pote</div>
-                <div class="item-price">R$ 12,00</div>
+                <div class="item-info">
+                    <div class="item-name">Bolo no pote</div>
+                    <div class="item-price">R$ 12,00</div>
+                </div>
+                <img src="bolo-pote.jpg" alt="Bolo no Pote" class="item-img">
             </div>
             <div class="menu-item">
-                <div class="item-name">Mini pudim</div>
-                <div class="item-price">R$ 8,00</div>
+                <div class="item-info">
+                    <div class="item-name">Mini pudim</div>
+                    <div class="item-price">R$ 8,00</div>
+                </div>
+                <img src="mini-pudim.jpg" alt="Mini Pudim" class="item-img">
             </div>
             <div class="menu-item">
-                <div class="item-name">Mini mousse</div>
-                <div class="item-price">R$ 8,00</div>
+                <div class="item-info">
+                    <div class="item-name">Mini mousse</div>
+                    <div class="item-price">R$ 8,00</div>
+                </div>
+                <img src="mini-mousse.jpg" alt="Mini Mousse" class="item-img">
             </div>
         </section>
 
