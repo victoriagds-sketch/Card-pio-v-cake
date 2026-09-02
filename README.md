@@ -583,7 +583,7 @@
     <div class="header-content">
 
       <img
-        src="logo.png"
+        src="logo.png.JPG"
         alt="Logo V-CAKE Confeitaria Artesanal"
         class="logo-img"
       >
