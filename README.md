@@ -18,17 +18,18 @@
             padding-bottom: 120px;
         }
 
-        /* CABEÇALHO */
+        /* CABEÇALHO LADO A LADO DA TELA (100% LARGURA) */
         header {
+            width: 100%;
             background-color: #FFFDF9;
             text-align: center;
-            padding: 35px 20px 25px;
+            padding: 40px 20px 30px;
             border-bottom: 1px solid #EAD8D0;
         }
 
         .logo-img {
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid #F2C4CE;
@@ -37,35 +38,36 @@
         }
 
         header h1 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             color: #8B5E3C;
             letter-spacing: 2px;
         }
 
         header p {
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: #C08A93;
-            margin-top: 4px;
+            margin-top: 5px;
             letter-spacing: 1px;
             font-weight: 600;
         }
 
         .insta-link {
             display: inline-block;
-            margin-top: 12px;
+            margin-top: 15px;
             color: #8B5E3C;
             text-decoration: none;
             font-weight: bold;
             background: #FFF;
-            padding: 6px 16px;
+            padding: 8px 20px;
             border-radius: 20px;
             border: 1px solid #EAD8D0;
             box-shadow: 0 2px 5px rgba(0,0,0,0.03);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
         }
 
-        /* NAVEGAÇÃO */
+        /* NAVEGAÇÃO COMPLETA DE CANTO A CANTO */
         .categories-nav {
+            width: 100%;
             display: flex;
             overflow-x: auto;
             white-space: nowrap;
@@ -81,17 +83,17 @@
         .categories-nav a {
             color: #8B5E3C;
             text-decoration: none;
-            padding: 7px 15px;
+            padding: 8px 16px;
             margin-right: 8px;
             border-radius: 18px;
             background-color: #F8EBEA;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 600;
         }
 
-        /* CONTEÚDO PRINCIPAL */
+        /* CONTEÚDO PRINCIPAL DO CARDÁPIO */
         .container {
-            max-width: 650px;
+            max-width: 800px;
             margin: 20px auto;
             padding: 0 15px;
         }
@@ -106,7 +108,7 @@
         }
 
         .category-title {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: #FFF;
             background-color: #D896A1;
             padding: 10px 15px;
@@ -115,12 +117,8 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
 
-        /* LINHAS DO CARDÁPIO */
         .info-card {
             background: #FAF4F0;
             border-radius: 10px;
@@ -156,7 +154,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 0;
+            padding: 12px 0;
             border-bottom: 1px dashed #EAD8D0;
             gap: 10px;
         }
@@ -188,16 +186,6 @@
             white-space: nowrap;
         }
 
-        .item-img {
-            width: 65px;
-            height: 65px;
-            object-fit: cover;
-            border-radius: 8px;
-            border: 1px solid #EAD8D0;
-            flex-shrink: 0;
-        }
-
-        /* RODAPÉ INFORMATIVO */
         footer {
             background-color: #8B5E3C;
             color: #FFF;
@@ -209,7 +197,6 @@
             border-radius: 16px;
         }
 
-        /* BOTÃO FLUTUANTE PEDIDO */
         .btn-whatsapp {
             position: fixed;
             bottom: 15px;
@@ -255,7 +242,6 @@
 
     <div class="container">
 
-        <!-- NOSSAS MASSAS -->
         <section id="massas" class="category-section">
             <div class="category-title">🍰 NOSSAS MASSAS</div>
             <div class="info-card">
@@ -268,7 +254,6 @@
             </div>
         </section>
 
-        <!-- RECHEIOS DE BOLO -->
         <section id="recheios" class="category-section">
             <div class="category-title">🎂 RECHEIOS DE BOLO</div>
             <div class="menu-item"><div class="item-name">Leite Ninho com Morango <span style="font-size:0.8rem; color:#C08A93;">(mais pedido)</span></div></div>
@@ -282,7 +267,6 @@
             <div class="menu-item"><div class="item-name">Ouro Branco</div></div>
         </section>
 
-        <!-- DOCINHOS -->
         <section id="docinhos" class="category-section">
             <div class="category-title">🍬 DOCINHOS</div>
             <div class="rule-badge">REGRA: 25un = 1 sabor | 50un = 2 sabores | 100un = até 4 sabores</div>
@@ -290,19 +274,16 @@
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">25 unidades</div></div>
                 <div class="item-price">R$ 45,00</div>
-                <img src="docinhos.jpg" alt="Docinhos" class="item-img">
             </div>
 
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">50 unidades</div></div>
                 <div class="item-price">R$ 90,00</div>
-                <img src="docinhos.jpg" alt="Docinhos" class="item-img">
             </div>
 
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">100 unidades</div></div>
                 <div class="item-price">R$ 170,00</div>
-                <img src="docinhos.jpg" alt="Docinhos" class="item-img">
             </div>
 
             <div class="info-card" style="margin-top: 12px;">
@@ -311,20 +292,17 @@
             </div>
         </section>
 
-        <!-- BOLOS / KITS / SOBREMESAS -->
         <section id="bolos-kits" class="category-section">
             <div class="category-title">🎁 BOLOS / KITS / SOBREMESAS</div>
             
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">Bolo por quilo</div></div>
                 <div class="item-price">R$ 75,00 / kg</div>
-                <img src="bolo-kilo.jpg" alt="Bolo por quilo" class="item-img">
             </div>
 
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">Bento Cake 5cm</div></div>
                 <div class="item-price">R$ 38,00</div>
-                <img src="bento-5cm.jpg" alt="Bento Cake 5cm" class="item-img">
             </div>
 
             <div class="menu-item">
@@ -333,7 +311,6 @@
                     <div class="item-desc">Aproximadamente 800g</div>
                 </div>
                 <div class="item-price">R$ 55,00</div>
-                <img src="bento-10cm.jpg" alt="Bento Cake 10cm" class="item-img">
             </div>
 
             <div class="menu-item">
@@ -342,7 +319,6 @@
                     <div class="item-desc">Ninho/Morango, Brigadeiro, Coco</div>
                 </div>
                 <div class="item-price">R$ 12,00</div>
-                <img src="bolo-pote.jpg" alt="Bolo no Pote" class="item-img">
             </div>
 
             <div style="margin-top: 15px;">
@@ -365,30 +341,25 @@
             </div>
         </section>
 
-        <!-- TORTAS -->
         <section id="tortas" class="category-section">
             <div class="category-title">🥧 TORTAS</div>
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">Torta (Limão / Abacaxi / Banoffee)</div></div>
                 <div class="item-price">R$ 75,00</div>
-                <img src="torta.jpg" alt="Torta" class="item-img">
             </div>
         </section>
 
-        <!-- SOBREMESAS NA TRAVESSA -->
         <section id="travessas" class="category-section">
             <div class="category-title">🍓 SOBREMESAS NA TRAVESSA</div>
             
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">Travessa Pequena</div></div>
                 <div class="item-price">R$ 70,00</div>
-                <img src="travessa-pequena.jpg" alt="Travessa Pequena" class="item-img">
             </div>
 
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">Travessa Grande</div></div>
                 <div class="item-price">R$ 130,00</div>
-                <img src="travessa-grande.jpg" alt="Travessa Grande" class="item-img">
             </div>
 
             <div class="info-card" style="margin-top: 10px;">
@@ -397,30 +368,25 @@
             </div>
         </section>
 
-        <!-- PUDINS & INDIVIDUAIS -->
         <section id="pudins" class="category-section">
             <div class="category-title">🍮 PUDINS & SOBREMESAS INDIVIDUAIS</div>
             
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">Pudim Grande (Tradicional / Maracujá / Ameixa)</div></div>
                 <div class="item-price">R$ 65,00</div>
-                <img src="pudim.jpg" alt="Pudim" class="item-img">
             </div>
 
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">Mini Pudim</div></div>
                 <div class="item-price">R$ 8,00</div>
-                <img src="mini-pudim.jpg" alt="Mini Pudim" class="item-img">
             </div>
 
             <div class="menu-item">
                 <div class="item-info"><div class="item-name">Mini Mousse</div></div>
                 <div class="item-price">R$ 8,00</div>
-                <img src="mini-mousse.jpg" alt="Mini Mousse" class="item-img">
             </div>
         </section>
 
-        <!-- RODAPÉ DE INFORMAÇÕES -->
         <footer>
             <p>🕒 <strong>7h às 19h</strong> | 📦 <strong>48h antecedência</strong></p>
             <p>📍 <strong>Retirada:</strong> Mansões das Águas Quentes - Caldas Novas</p>
@@ -428,7 +394,6 @@
 
     </div>
 
-    <!-- BOTÃO DE WHATSAPP -->
     <a href="https://wa.me/5564992147719?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20V-CAKE" target="_blank" class="btn-whatsapp">
         💬 Faça seu pedido no WhatsApp
     </a>
