@@ -15,7 +15,7 @@
         body {
             background-color: #FFFDF9;
             color: #4A3B32;
-            padding-bottom: 90px;
+            padding-bottom: 120px;
         }
 
         /* CABEÇALHO COM LOGO */
@@ -63,7 +63,7 @@
             font-size: 0.9rem;
         }
 
-        /* NAVEGAÇÃO */
+        /* NAVEGAÇÃO / CATEGORIAS */
         .categories-nav {
             display: flex;
             overflow-x: auto;
@@ -88,7 +88,7 @@
             font-weight: 600;
         }
 
-        /* CONTEÚDO */
+        /* CONTEÚDO PRINCIPAL */
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -111,7 +111,41 @@
             letter-spacing: 1px;
         }
 
-        /* ITEMS COM SUPORTE A FOTOS */
+        /* CARDS / LISTAS */
+        .info-card {
+            background: #FFF;
+            border: 1px solid #E8D8CE;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .info-card-title {
+            font-weight: bold;
+            color: #5C4033;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .info-card-desc {
+            font-size: 0.9rem;
+            color: #7D6B5D;
+        }
+
+        .rule-badge {
+            background-color: #FFF0F5;
+            color: #B5838D;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border: 1px solid #F5E6E8;
+            text-align: center;
+        }
+
+        /* ITEMS COM FOTOS */
         .menu-item {
             background: #FFF;
             border: 1px solid #E8D8CE;
@@ -159,7 +193,7 @@
             flex-shrink: 0;
         }
 
-        /* KITS */
+        /* GRIDS DOS KITS */
         .kits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -199,10 +233,23 @@
             color: #6B4E31;
         }
 
+        /* RODAPÉ INFORMATIVO */
+        footer {
+            background-color: #7A4B4B;
+            color: #FFF;
+            text-align: center;
+            padding: 20px 15px;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-top: 30px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
         /* BOTÃO FLUTUANTE PEDIDO */
         .btn-whatsapp {
             position: fixed;
-            bottom: 20px;
+            bottom: 15px;
             right: 20px;
             left: 20px;
             max-width: 400px;
@@ -215,7 +262,7 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 1.05rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -230,26 +277,87 @@
         <!-- FOTO DA LOGO DA V-CAKE -->
         <img src="logo.png" alt="V-CAKE Confeitaria" class="logo-img">
         <h1>V-CAKE</h1>
-        <p>Confeitaria Artesanal</p>
+        <p>CONFEITARIA ARTESANAL</p>
         <a href="https://instagram.com/Vitoria_Cake24" target="_blank" class="insta-link">📸 @Vitoria_Cake24</a>
     </header>
 
     <div class="categories-nav">
-        <a href="#bolos">🍰 Bolos</a>
-        <a href="#cupcakes">🧁 Cupcakes</a>
+        <a href="#massas">🍰 Massas</a>
+        <a href="#recheios">🎂 Recheios</a>
         <a href="#docinhos">🍬 Docinhos</a>
-        <a href="#kits">🎁 Kits</a>
-        <a href="#tortas">🍰 Tortas</a>
+        <a href="#bolos-kits">🎁 Bolos & Kits</a>
+        <a href="#tortas">🥧 Tortas</a>
         <a href="#travessa">🍓 Travessas</a>
         <a href="#pudins">🍮 Pudins</a>
-        <a href="#individuais">🍫 Individuais</a>
     </div>
 
     <div class="container">
 
-        <!-- BOLOS -->
-        <section id="bolos" class="category-section">
-            <div class="category-title">🍰 Bolos</div>
+        <!-- NOSSAS MASSAS -->
+        <section id="massas" class="category-section">
+            <div class="category-title">🍰 NOSSAS MASSAS</div>
+            <div class="info-card">
+                <div class="info-card-title">Massa Branca de Baunilha</div>
+                <div class="info-card-desc">Fofinha e combina com tudo</div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-title">Massa de Chocolate 50% Cacau</div>
+                <div class="info-card-desc">Úmida e intensa</div>
+            </div>
+        </section>
+
+        <!-- RECHEIOS DE BOLO -->
+        <section id="recheios" class="category-section">
+            <div class="category-title">🎂 RECHEIOS DE BOLO</div>
+            <div class="info-card"><div class="info-card-title">Leite Ninho com Morango <span style="font-size:0.8rem; color:#B5838D;">(mais pedido)</span></div></div>
+            <div class="info-card"><div class="info-card-title">Brigadeiro Cremoso</div></div>
+            <div class="info-card"><div class="info-card-title">Coco Cremoso</div></div>
+            <div class="info-card"><div class="info-card-title">Ninho com Nutella <span style="font-size:0.8rem; color:#B5838D;">(premium)</span></div></div>
+            <div class="info-card"><div class="info-card-title">Creme de Abacaxi</div></div>
+            <div class="info-card"><div class="info-card-title">Creme de Paçoca</div></div>
+            <div class="info-card"><div class="info-card-title">Doce de Leite com Ameixa</div></div>
+            <div class="info-card"><div class="info-card-title">Brigadeiro de Maracujá</div></div>
+            <div class="info-card"><div class="info-card-title">Ouro Branco</div></div>
+        </section>
+
+        <!-- DOCINHOS -->
+        <section id="docinhos" class="category-section">
+            <div class="category-title">🍬 DOCINHOS</div>
+            <div class="rule-badge">REGRA: 25un = 1 sabor | 50un = 2 sabores | 100un = até 4 sabores</div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">25 unidades</div>
+                    <div class="item-price">R$ 45,00</div>
+                </div>
+                <img src="docinhos.jpg" alt="Docinhos" class="item-img">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">50 unidades</div>
+                    <div class="item-price">R$ 90,00</div>
+                </div>
+                <img src="docinhos.jpg" alt="Docinhos" class="item-img">
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <div class="item-name">100 unidades</div>
+                    <div class="item-price">R$ 170,00</div>
+                </div>
+                <img src="docinhos.jpg" alt="Docinhos" class="item-img">
+            </div>
+
+            <div class="info-card" style="margin-top: 10px;">
+                <div class="info-card-title" style="font-size:0.9rem;">Sabores disponíveis:</div>
+                <div class="info-card-desc">Brigadeiro, Coco, Leite Ninho, Ninho com Nutella, Bicho de Pé, Paçoca, Maracujá, Churros com amendoim.</div>
+            </div>
+        </section>
+
+        <!-- BOLOS / KITS / SOBREMESAS -->
+        <section id="bolos-kits" class="category-section">
+            <div class="category-title">🎁 BOLOS / KITS / SOBREMESAS</div>
             
             <div class="menu-item">
                 <div class="item-info">
@@ -261,7 +369,7 @@
 
             <div class="menu-item">
                 <div class="item-info">
-                    <div class="item-name">Bento Cake de 5 cm</div>
+                    <div class="item-name">Bento Cake 5cm</div>
                     <div class="item-desc">Na hamburgueira</div>
                     <div class="item-price">R$ 38,00</div>
                 </div>
@@ -270,93 +378,39 @@
 
             <div class="menu-item">
                 <div class="item-info">
-                    <div class="item-name">Bento Cake de 10 cm</div>
-                    <div class="item-desc">Aproximadamente 800 g</div>
-                    <div class="item-price">R$ 55,00</div>
+                    <div class="item-name">Bolo no pote</div>
+                    <div class="item-desc">Ninho/Morango, Brigadeiro, Coco</div>
+                    <div class="item-price">R$ 12,00</div>
                 </div>
-                <img src="bento-10cm.jpg" alt="Bento Cake 10cm" class="item-img">
+                <img src="bolo-pote.jpg" alt="Bolo no Pote" class="item-img">
             </div>
-        </section>
 
-        <!-- CUPCAKES -->
-        <section id="cupcakes" class="category-section">
-            <div class="category-title">🧁 Cupcakes</div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <div class="item-name">6 unidades</div>
-                    <div class="item-price">R$ 45,00</div>
-                </div>
-                <img src="cupcake-6.jpg" alt="Cupcakes" class="item-img">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <div class="item-name">12 unidades</div>
-                    <div class="item-price">R$ 90,00</div>
-                </div>
-                <img src="cupcake-12.jpg" alt="Cupcakes" class="item-img">
-            </div>
-        </section>
-
-        <!-- DOCINHOS -->
-        <section id="docinhos" class="category-section">
-            <div class="category-title">🍬 Docinhos</div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <div class="item-name">25 unidades</div>
-                    <div class="item-price">R$ 45,00</div>
-                </div>
-                <img src="docinhos-25.jpg" alt="Docinhos" class="item-img">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <div class="item-name">50 unidades</div>
-                    <div class="item-price">R$ 90,00</div>
-                </div>
-                <img src="docinhos-50.jpg" alt="Docinhos" class="item-img">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <div class="item-name">100 unidades</div>
-                    <div class="item-price">R$ 170,00</div>
-                </div>
-                <img src="docinhos-100.jpg" alt="Docinhos" class="item-img">
-            </div>
-        </section>
-
-        <!-- KITS -->
-        <section id="kits" class="category-section">
-            <div class="category-title">🎁 Kits Festa</div>
-            <div class="kits-grid">
+            <div class="kits-grid" style="margin-top: 15px;">
                 <div class="kit-card">
-                    <div class="kit-header"><span class="kit-title">Kit 1</span><span class="kit-price">R$ 98,00</span></div>
+                    <div class="kit-header"><span class="kit-title">KIT 1</span><span class="kit-price">R$ 98,00</span></div>
                     <ul class="kit-ul">
-                        <li>Bolo de 10 cm (aprox. 800 g)</li>
-                        <li>10 docinhos</li>
-                        <li>6 cupcakes</li>
+                        <li>800g + 10 doces + 6 cupcakes</li>
                     </ul>
                 </div>
+
                 <div class="kit-card">
-                    <div class="kit-header"><span class="kit-title">Kit 2</span><span class="kit-price">R$ 185,00</span></div>
+                    <div class="kit-header"><span class="kit-title">KIT 2</span><span class="kit-price">R$ 185,00</span></div>
                     <ul class="kit-ul">
-                        <li>Bolo de 1,5 kg</li>
-                        <li>25 docinhos</li>
-                        <li>12 cupcakes</li>
+                        <li>1,5kg + 25 doces + 12 cupcakes</li>
                     </ul>
                 </div>
+
                 <div class="kit-card">
-                    <div class="kit-header"><span class="kit-title">Kit 3</span><span class="kit-price">R$ 225,00</span></div>
+                    <div class="kit-header"><span class="kit-title">KIT 3</span><span class="kit-price">R$ 225,00</span></div>
                     <ul class="kit-ul">
-                        <li>Bolo de 2 kg</li>
-                        <li>50 docinhos</li>
-                        <li>20 cupcakes</li>
+                        <li>2kg + 50 doces + 20 cupcakes</li>
                     </ul>
                 </div>
+
                 <div class="kit-card">
-                    <div class="kit-header"><span class="kit-title">Kit 4</span><span class="kit-price">R$ 410,00</span></div>
+                    <div class="kit-header"><span class="kit-title">KIT 4</span><span class="kit-price">R$ 410,00</span></div>
                     <ul class="kit-ul">
-                        <li>Bolo de 3 kg</li>
-                        <li>100 docinhos</li>
-                        <li>24 cupcakes</li>
+                        <li>3kg + 100 doces + 24 cupcakes</li>
                     </ul>
                 </div>
             </div>
@@ -364,78 +418,23 @@
 
         <!-- TORTAS -->
         <section id="tortas" class="category-section">
-            <div class="category-title">🍰 Tortas — R$ 75,00</div>
-            <div class="menu-item">
-                <div class="item-info"><div class="item-name">Torta de limão</div></div>
-                <img src="torta-limao.jpg" alt="Torta de Limão" class="item-img">
-            </div>
-            <div class="menu-item">
-                <div class="item-info"><div class="item-name">Torta de abacaxi</div></div>
-                <img src="torta-abacaxi.jpg" alt="Torta de Abacaxi" class="item-img">
-            </div>
-            <div class="menu-item">
-                <div class="item-info"><div class="item-name">Banoffee</div></div>
-                <img src="banoffee.jpg" alt="Banoffee" class="item-img">
-            </div>
-        </section>
-
-        <!-- SOBREMESAS NA TRAVESSA -->
-        <section id="travessa" class="category-section">
-            <div class="category-title">🍓 Sobremesas na Travessa</div>
-            <div class="kit-card" style="margin-bottom: 12px;">
-                <div class="kit-header"><span class="kit-title">Travessa Pequena</span><span class="kit-price">R$ 70,00</span></div>
-                <div class="item-desc" style="color: #5C4033;">Sabores: Bombom de morango, Bombom de uva, Mousse trufado.</div>
-            </div>
-            <div class="kit-card">
-                <div class="kit-header"><span class="kit-title">Travessa Grande</span><span class="kit-price">R$ 130,00</span></div>
-                <div class="item-desc" style="color: #5C4033;">Sabores: Bombom de morango, Bombom de uva, Mousse trufado.</div>
-            </div>
-        </section>
-
-        <!-- PUDINS -->
-        <section id="pudins" class="category-section">
-            <div class="category-title">🍮 Pudins — R$ 65,00</div>
-            <div class="menu-item">
-                <div class="item-info"><div class="item-name">Pudim tradicional</div></div>
-                <img src="pudim-tradicional.jpg" alt="Pudim Tradicional" class="item-img">
-            </div>
-            <div class="menu-item">
-                <div class="item-info"><div class="item-name">Pudim de maracujá</div></div>
-                <img src="pudim-maracuja.jpg" alt="Pudim de Maracujá" class="item-img">
-            </div>
-            <div class="menu-item">
-                <div class="item-info"><div class="item-name">Pudim com calda de ameixa</div></div>
-                <img src="pudim-ameixa.jpg" alt="Pudim Ameixa" class="item-img">
-            </div>
-        </section>
-
-        <!-- INDIVIDUAIS -->
-        <section id="individuais" class="category-section">
-            <div class="category-title">🍫 Sobremesas Individuais</div>
+            <div class="category-title">🥧 TORTAS</div>
             <div class="menu-item">
                 <div class="item-info">
-                    <div class="item-name">Bolo no pote</div>
-                    <div class="item-price">R$ 12,00</div>
+                    <div class="item-name">Torta (Limão / Abacaxi / Banoffee)</div>
+                    <div class="item-price">R$ 75,00</div>
                 </div>
-                <img src="bolo-pote.jpg" alt="Bolo no Pote" class="item-img">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <div class="item-name">Mini pudim</div>
-                    <div class="item-price">R$ 8,00</div>
-                </div>
-                <img src="mini-pudim.jpg" alt="Mini Pudim" class="item-img">
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <div class="item-name">Mini mousse</div>
-                    <div class="item-price">R$ 8,00</div>
-                </div>
-                <img src="mini-mousse.jpg" alt="Mini Mousse" class="item-img">
+                <img src="torta.jpg" alt="Torta" class="item-img">
             </div>
         </section>
 
     </div>
+
+    <!-- RODAPÉ DE INFORMAÇÕES -->
+    <footer>
+        <p>🕒 <strong>Atendimento:</strong> 7h às 19h | 📦 <strong>48h antecedência</strong></p>
+        <p>📍 <strong>Retirada:</strong> Mansões das Águas Quentes - Caldas Novas</p>
+    </footer>
 
     <!-- BOTÃO DE WHATSAPP -->
     <a href="https://wa.me/5564992147719?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20V-CAKE" target="_blank" class="btn-whatsapp">
